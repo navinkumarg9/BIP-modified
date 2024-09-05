@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Scholarship Form</title>
+  <title>MODIFIED-CAMPS</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="css/scholarship.css" rel="stylesheet">
+</head>
+<body>
+  <form id="form1" method="post" action="student_scholarship">
+    <table>
+      <tr>
+        <td><div align="center" class="menu">Scholarship Form</div></td>
+      </tr>
+      <tr>
+        <td class="otcontent">
+          <table>
+            <tr>
+              <td>Roll No</td>
+              <td>
+                <input type="text" name="rollno" id="rollno" placeholder="Enter Roll No" />
+              </td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td>
+                <select name="stype" class="validate[required]" id="stype">
+                  <option value="" selected="selected">-- Select --</option>
+                  <option value="Fresh">Fresh (First Year / Lateral Students / First Time Apply)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" colspan="2">
+                <input type="submit" id="view" name="view" value="Download" class="myButton" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

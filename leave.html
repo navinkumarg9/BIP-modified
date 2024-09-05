@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MODIFIED-CAMPS</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="css/leave.css" rel="stylesheet">
+</head>
+<body>  
+  <div class="container">
+    <div class="title">Leave Apply</div>
+    <div class="content">
+      <form action="#" id="leave_form">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Leave Type</span>
+            <select id="leave_type" name="leave_type" onchange="toggleActivityId()">
+              <option value="">--Select--</option>
+              <option value="3">Leave</option>
+              <option value="11">ON DUTY</option>
+              <option value="17">INTERNAL OD</option>
+              <option value="24">Internal Training</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">From Date</span>
+            <input type="date" id="from_date" name="from_date" required />
+          </div>        
+          <div class="input-box">
+            <span class="details">From Time</span>
+            <input type="time" id="from_time" name="from_time" required />
+          </div>        
+          <div class="input-box">
+            <span class="details">To Date</span>
+            <input type="date" id="to_date" name="to_date" required />
+          </div>        
+          <div class="input-box">
+            <span class="details">To Time</span>
+            <input type="time" id="to_time" name="to_time" required />
+          </div>        
+          <div class="input-box">
+            <span class="address">Reason:</span>
+            <textarea id="reason" name="reason" cols="40" rows="3" required></textarea>
+          </div>
+          <div class="input-box" id="activity_id">
+            <label for="act_id"><span class="mandatory">*</span>Activity Id:</label>
+            <input type="text" id="act_id" name="act_id" />
+          </div>
+          <div class="center-button">
+            <div class="button-container">
+              <div class="button">
+                <button type="submit" onclick="handleFormSubmit()">Submit</button>
+              </div>
+            </div>
+          </div>          
+          <div class="check-button-container">
+            <a href="leave_status.html" class="check-button">Check Status</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/time.js"></script>
+  <script src="js/leave.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6, #e74c3c, #f1c40f, #2ecc71, #3498db);
+        background-size: 600% 600%;
+        animation: gradient 10s ease infinite;
+      }
+      table {
+        width: 500px;
+        border-collapse: collapse;
+        background-color: white;
+        border: none;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+      }
+      .menu {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+      }
+      .otcontent {
+        padding: 20px;
+      }
+      .myButton {
+        background-color: lightpink;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }

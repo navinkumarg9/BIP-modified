@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6, #e74c3c, #f1c40f, #2ecc71, #3498db);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;  
+}
+  .container {
+    height: 100%;
+    min-height: 100%;
+    height: auto !important;
+    margin: -75px auto -100px;
+  }
+  .header {
+    padding-top: 75px;
+  }
+  table {
+    width: 923px;
+    margin: 0 auto;
+  }
+  .menu {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  .otheader {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  .otcontent {
+    padding: 10px;
+    background-color: white;
+  }
+  p {
+    text-align: justify;
+    color: black;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

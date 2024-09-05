@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6, #e74c3c, #f1c40f, #2ecc71, #3498db);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+  }
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

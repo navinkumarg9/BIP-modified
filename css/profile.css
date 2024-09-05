@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6, #e74c3c, #f1c40f, #2ecc71, #3498db);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.profile-label {
+    font-weight: bold;
+    width: 120px;
+    font-size: 18px;
+}
+
+.profile-value {
+    margin-left: 10px;
+    font-size: 18px;
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
